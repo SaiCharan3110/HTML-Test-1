@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+  <head>
+    <title>Register</title>
+  </head>
+    <body bgcolor="lightblue">
+            <!--THIS FORM TAG ALLOWS US TO NAVIGATE TO ANOTHER PAGE WHILE CLICKING SUMBIT BOTTON-->
+            <form action="blog.html" method="post" target="_self">
+            <!--THIS FORM TAG ALLOWS US TO NAVIGATE TO ANOTHER PAGE WHILE CLICKING SUMBIT BOTTON-->
+        <fieldset><legend><h2>Register Form</h2></legend>
+        <table align="center" bgcolor="black" width="400px" height="600px" cellpadding="15px" >
+            
+            <tr bgcolor="lightgreen">
+                <td>
+                    <lable for="fname"> First Name:</lable>
+                </td>
+                <td>
+                    <input type="name" id="fname" required autofocus placeholder="First Name"/>
+                </td>
+            </tr>
+
+            <tr bgcolor="lightgreen" >
+                <td>
+                    <lable for="lname"> Last Name:</lable>
+                </td>
+                <td>
+                    <input type="name" id="lname" required placeholder="Last Name"/>
+                </td>
+            </tr>
+
+            <tr bgcolor="lightgreen" >
+                <td>
+                    <lable for="mail"> Email:</lable>
+                </td>
+                <td>
+                    <input type="email" id="mail" required placeholder="Enter Email"/>
+                </td>
+            </tr>
+
+            <tr bgcolor="lightgreen" >
+                <td>   
+                    <lable for="age"> Age:</lable> 
+                </td>
+                <td>           
+                    <input type="number" id="age"/>
+                </td>
+            </tr>
+
+            <tr bgcolor="lightgreen" >
+                <td>
+                    <lable for="mobile"> Mobile Number:</lable>
+                </td>
+                <td>
+                    <input type="number" id="mobile" required placeholder="Enter Mobile Number"/>
+                </td>
+            </tr>
+
+            <tr bgcolor="lightgreen" >
+                <td rowspan="2">
+                    <lable > Gender:</lable>
+                </td>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="male"/>
+                        <lable for="gender"> Male</lable><br>
+                        
+                        
+                    </td>
+            </tr>
+            <tr  bgcolor="lightgreen">
+                <td>
+                    <input type="radio" id="female" name="gender" value="female"/>
+                    <lable for="gender">Female</lable>
+                </td>
+            </tr>
+            
+            <tr bgcolor="lightgreen" >
+                <td rowspan="3">
+                    <lable > Hobbies:</lable>
+                </td>
+                <td>
+                    <input type="checkbox" value="Playing" name="Hobbies" id="Playing"/>
+                    <lable >Playing</lable>
+                </td>
+            </tr>
+
+            <tr  bgcolor="lightgreen">
+                <td>
+                    <input type="checkbox" value="Eating" name="Hobbies" id="Eating"/>
+                    <lable >Eating</lable>
+                </td>
+            </tr>
+
+            <tr  bgcolor="lightgreen">
+                <td>
+                    <input type="checkbox" value="Sleeping" name="Hobbies" id="Sleeping"/>
+                    <lable >Sleeping</lable>
+                </td>
+            </tr>
+
+            
+            <tr bgcolor="lightgreen" >
+                <td>
+                    <lable for="pass">Password:</lable>
+                </td>
+                <td>
+                    <input type="password" id="pass" required placeholder="Enter Password"/>
+                </td>
+            </tr>
+            
+            <tr bgcolor="lightgreen" >
+                <td>
+                    <lable for="cpass">Confirm Password:</lable>
+                </td>
+                <td>
+                    <input type="password" id="cpass" required placeholder="Confirm Your Password"/>
+                </td>
+            </tr>
+            <tr bgcolor="lightgreen" >
+                <td>
+                    <label> Region:</label>
+                </td>
+                <td>
+                    <select>
+                        <option value="Andhra Pradesh"> Andhra Pradesh </option>
+                        <option value="Karanatak"> Karanatak </option>
+                        <option value="Tamil Nadu"> Tamil Nadu </option>
+                        <option value="Telangana"> Telangana </option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr bgcolor="lightgreen" >
+                <td>
+                    <label for="Qualification"> Qualification:</label>
+                </td>
+                <td>
+                    <input type="name" id="Qualification" list="QualificationList">
+                    <datalist id="QualificationList">
+                        <option>School
+                        <option>Intermediate</option>
+                        <option>Diploma</option>
+                        <option>Under Graduate (UG)</option>
+                        <option>Post Graduate (PG)</option>
+                    </datalist>
+                </td>
+            </tr>
+
+            <tr bgcolor="lightgreen" >
+                <td>
+                    <label>Message:</label>
+                </td>
+                <td>
+                    <textarea rows="8px" cols="21px">text here...</textarea>
+                </td>
+            </tr>
+            
+            <tr bgcolor="lightgreen" >
+                <th colspan="2">
+                    <button>Submit Form</button>
+                    <input type="reset"/>
+                </th>
+            </tr>
+        </table>
+    </fieldset>
+    </body>
+</html>
